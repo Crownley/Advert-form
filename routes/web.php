@@ -25,10 +25,6 @@ Route::get('form/getsubcategories/{id}','FormController@getSubcategories');
  * Add New Task
  */
 Route::post('/advert', function (Request $request) {
-    //
-});
-
-Route::post('/advert', function (Request $request) {
     $validator = Validator::make($request->all(), [
         'name' => 'required|max:255',
         'category' => 'required',
