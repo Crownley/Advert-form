@@ -10,7 +10,7 @@ class FormController extends Controller
     public function getCategories()
     {
         $categories = DB::table('categories')->pluck("name","id");
-        return view('form',compact('categories'));
+        return view('index',compact('categories'));
     }
 
     public function getSubcategories($id) 
